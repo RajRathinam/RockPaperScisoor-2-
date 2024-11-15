@@ -1,0 +1,51 @@
+body {
+    background-image: url("bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.container {
+    padding: 20px;
+    width: 50%;
+    background-color: #ecedf063;
+    backdrop-filter: blur(10px);   
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(2, 1, 1, 0.301);
+
+
+h1 {
+    color: #080000;
+    font-weight: bolder;
+    font-size: 40px;
+}
+}
+.choices button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.choices button:hover {
+    background-color: #0056b3;
+}
+
+.results p {
+    font-size: 18px;
+    margin: 10px 0;
+}
