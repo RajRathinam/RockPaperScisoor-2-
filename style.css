@@ -4,48 +4,87 @@ body {
     background-size: cover;
     background-position: center;
     font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: 80vh;
-}
-
-.container {
-    padding: 20px;
-    width: 50%;
-    background-color: #ecedf063;
-    backdrop-filter: blur(10px);   
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(2, 1, 1, 0.301);
 
 
-h1 {
-    color: #080000;
-    font-weight: bolder;
-    font-size: 40px;
-}
-}
-.choices button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    transition: background-color 0.3s;
-}
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        padding: 20px;
+        width: 50%;
+        background-color: #ecedf063;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(2, 1, 1, 0.301);
 
-.choices button:hover {
-    background-color: #0056b3;
-}
 
-.results p {
-    font-size: 18px;
-    margin: 10px 0;
+        h1 {
+            color: #080000;
+            font-weight: bolder;
+            font-size: 40px;
+        }
+    }
+
+    .choices button {
+        margin: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 50%;
+        border: none;
+        background-color: blue;
+        color: white;
+        font-size: xx-large;
+    }
+
+    .choices button:hover {
+        background-color: #0056b3;
+    }
+
+    .results {
+        text-align: center;
+        backdrop-filter: blur(100px);
+        font-size: 22px;
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .choice_pic,
+    .your_computer_choice,
+    .score {
+        display: flex;
+        justify-content: space-around;
+        backdrop-filter: blur(100px);
+        font-size: 22px;
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .choice_pic {
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            i {
+                margin: 5px 20px;
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 50%;
+                border: none;
+                background-color: rgb(6, 107, 31);
+                color: white;
+                font-size: xx-large;
+            }
+        }
+    }
 }
